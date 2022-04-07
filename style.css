@@ -1,0 +1,289 @@
+*{
+    box-sizing: border-box;
+}
+/*ảnh nền vs màu nên sau cùng*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    min-height:1800px;
+    background-image: url(images/bg-top.jpg), url(images/bg-bottom.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, bottom left;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+}
+/*tạo hiệu ứng nhấn*/
+#add-card1{
+    width:240px;
+    height:60px;
+    background-image: url(images/buttons-left.png);
+    background-position: 0px 0px;
+}
+#add-card1:hover{
+    background-position: -248px 0px;
+}
+#add-card2{
+    width:240px;
+    height:60px;
+    background-image: url(images/buttons-left.png);
+    background-position: 0px -66px;
+}
+#add-card2:hover{
+    background-position: -248px -66px;
+}
+/*Tạo lồng đèn*/
+.longden{
+    width:115px;
+    height:245px;
+    background-image: url(images/long-den.png);
+    position: absolute;
+    background-position: 0px 0px;
+    top: 510px;
+    left:378px;
+
+}
+/*menu trên cùng*/
+.container-top{
+    width: 1100px;
+    height:50px;
+    position: absolute;
+    left: 380px;
+    display: flex;
+    justify-content: space-between;
+}
+.header ul {
+    list-style: none;    
+}
+.header li {
+    display: inline-table;        
+}
+.header li+li {
+    margin-left: 15px;
+}
+/*-- bên trái --*/
+.menu-trai{
+    width: 420px;
+}
+.menu-trai ul li a{
+    text-decoration: none;
+    border-right: 2px solid #6F7179;
+    padding-right: 10px;
+}
+/*-- bên phải*/
+.menu-phai{
+    width: 420px;
+}
+.menu-phai ul li a{
+    text-decoration: none;
+    border-left: 2px solid #6F7179;
+    padding-left: 10px;
+}
+/*Body 1*/
+.container-2{
+    width: 990px;
+    height:260px;
+    border: 1px solid #112141;
+    position: absolute;
+    top: 510px;
+    left: 455px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #112141;
+}
+/*-- trái --*/
+.container2-1{
+    width: 245px;
+    padding-left:3px;
+}
+/*-- giữa --*/
+.container2-2{
+    width: 490px;
+}
+/*-- phải --*/
+.container2-3{
+    width: 240px;
+    padding-left: 7px;
+}
+/*Body 2*/
+.container-3{
+    width: 990px;
+    height: 780px;
+    position: absolute;
+    top: 780px;
+    left: 455px;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+.container3-1{   
+    width: 748px;
+    height: 800px;
+
+}
+.container3-2{
+    width: 745px;
+    height: 325px;
+    border: 7px solid #112141;
+}
+.gift{
+    width: 745px;
+    height: 90px;
+}
+.boxnew{
+    width: 745px;
+    height: 55px;
+
+}
+/*Bảng tin tức menu*/
+.boxmenu{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 95px;
+    width: 745px;
+    height: 55px;
+    background-image: url(images/news-header-bg.png);
+}
+.boxmenu ul{
+    list-style: none; 
+}
+.boxmenu li {
+    display: inline-table;        
+}
+.boxmenu li+li {
+    margin-left: 50px;
+}
+.boxmenu ul li a{
+    text-decoration: none; 
+}
+/*Thông báo 1*/
+.thongbao1{
+    border:10px solid #f2f2f2; 
+    display: flex;
+
+}
+.thongbao1-1{
+    padding-left: 10px;
+}
+.thongbao1-1-1{
+    color: #B70F11;
+    font-size: 1.2em;
+    border-left: 3px solid #B70F11;
+    padding-left: 3px;
+}
+.thongbao1-1-2{
+    color: #8C8C8C;
+    font-size: 0.7em;
+    font-style: italic;
+
+}
+.thongbao1-1-3{
+    color:#696969;
+    font-size: 0.9em;
+
+}
+/*Thông báo 2*/
+.thongbao2{
+    border:10px solid #f2f2f2; 
+    display: flex;
+
+}
+.thongbao2-1{
+    padding-left: 10px;
+}
+.thongbao2-1-1{
+    color: #B70F11;
+    font-size: 1.2em;
+    border-left: 3px solid #B70F11;
+    padding-left: 3px;
+
+}
+.thongbao2-1-2{
+    color: #8C8C8C;
+    font-size: 0.7em;
+    font-style: italic;
+}
+.thongbao2-1-3{
+    color:#696969;
+    font-size: 0.9em;
+
+}
+/*Thông báo 3*/
+.thongbao3{
+    border:10px solid #f2f2f2; 
+    display: flex;
+
+}
+.thongbao3-1{
+    padding-left: 10px;
+}
+.thongbao3-1-1{
+    color: #B70F11;
+    font-size: 1.2em;
+    border-left: 3px solid #B70F11;
+    padding-left: 3px;
+}
+.thongbao3-1-2{
+    color: #8C8C8C;
+    font-size: 0.7em;
+    font-style: italic;
+}
+.thongbao3-1-3{
+    color:#696969;
+    font-size: 0.9em;
+
+}
+.MENU{
+    border: 4px solid #1F3252;
+    height: 650px;
+    width: 745px;
+}
+/*Logo cuối trang*/
+.logo{
+    position: absolute;
+    top: 1680px;
+    left: 455px;
+    display: flex;
+    justify-content: space-between;
+    }
+/*Quảng cáo cuối trang*/
+.box-text{
+    position: absolute;
+    top: 1670px;
+    left: 600px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.box-text ul{
+    list-style: none; 
+}
+.box-text ul li a{
+    text-decoration: none;
+}
+/*Điều hướng trang*/
+.boxdieuhuong{
+    
+    display: flex;
+    left: 500px;
+    top: 720px;
+    height: 40px;
+    width: 500 px;
+    position: absolute;
+    gap:10px;
+    text-align: center;
+}
+.lentren{
+    border: 4px solid #BFBFBF;
+    padding-top: 13px;
+    height: 50px;
+    width: 100px;
+    background-color: #112141;
+}
+.xemthem{
+    border: 4px solid #BFBFBF;
+    padding-top: 13px;
+    height: 50px;
+    width: 100px;
+    background-color: #112141;
+}
